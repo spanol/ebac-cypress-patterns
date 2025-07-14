@@ -13,7 +13,7 @@ describe("Teste de checkout", () => {
     cy.login(user.email, user.password);
   });
 
-  it("Categories should be visible", () => {
+  it("Deve percorrer o fluxo de pesquisa e seleção e checkout de produtos", () => {
     cy.intercept("GET", "**/public/getCategories", {
       fixture: "categories.json",
     }).as("getCategories");
@@ -26,6 +26,8 @@ describe("Teste de checkout", () => {
     homePage.openCategoriesFilter();
     homePage.categories().should("have.length.greaterThan", 1);
     homePage.selectCategory();
-    cy.addProductToCart();
+
+    cy.addFirstProductToCart();
+    cy.finishCheckout();
   });
 });

@@ -7,12 +7,22 @@ export const homePage = {
     cy.get('[data-testid="search-products"]').click();
   },
 
+  searchProduct(productName) {
+    cy.get('[data-testid="searchInput"]').type(productName);
+  },
+
   openCategoriesFilter() {
     return cy.get('[data-testid="Category"]').click();
   },
 
   categories() {
     return cy.get('[data-testid^="search-category-"]');
+  },
+
+  products() {
+    return cy.get(
+      '[data-testid="browse-product-list"] [data-testid="productDetails"]'
+    );
   },
 
   selectCategory(categoryName = "Roupas") {
