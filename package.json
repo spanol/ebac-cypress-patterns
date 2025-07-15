@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^14.5.1"
+  },
+  "dependencies": {
+    "cypress-html-reporter": "^11.0.0"
   }
 }
