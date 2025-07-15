@@ -1,7 +1,7 @@
 const { homePage } = require("../support/pages/home.page");
 const { profilePage } = require("../support/pages/profile.page");
 import loginPage from "../support/pages/login.page";
-const data = require("../fixtures/data.json");
+const user = require("../fixtures/user.json");
 
 describe("Teste de autenticação", () => {
   beforeEach(() => {
@@ -13,11 +13,11 @@ describe("Teste de autenticação", () => {
 
   it("Deve autenticar o usuário", () => {
     homePage.openMenu("Account");
-    loginPage.login(data.email, data.password);
+    loginPage.login(user.email, user.password);
     homePage.openMenu("Account");
 
-    profilePage.customerName().should("contain", data.name);
-    profilePage.customerPhone().should("contain", data.phone);
-    profilePage.customerEmail().should("contain", data.email);
+    profilePage.customerName().should("contain", user.name);
+    profilePage.customerPhone().should("contain", user.phone);
+    profilePage.customerEmail().should("contain", user.email);
   });
 });
