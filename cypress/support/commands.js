@@ -42,7 +42,8 @@ Cypress.Commands.add("addFirstProductToCart", () => {
   cy.get(
     '[style="margin: 5px 7px; border-color: rgb(128, 128, 128); border-width: 0.5px; border-radius: 15px; width: 445px;"] > [data-testid="productDetails"]'
   ).click();
-  cy.get("[data-testid='addToCart']").click();
+
+  cy.get('[data-testid="addToCart"]').click();
 });
 
 Cypress.Commands.add("finishCheckout", () => {
