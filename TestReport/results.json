@@ -39,14 +39,14 @@
     "numTestsKeptInMemory": 0,
     "platform": "win32",
     "pageLoadTimeout": 60000,
-    "port": 59299,
+    "port": 56115,
     "projectId": null,
     "redirectionLimit": 20,
     "reporter": "spec",
     "reporterOptions": null,
     "requestTimeout": 5000,
     "resolvedNodePath": "C:\\nvm4w\\nodejs\\node.exe",
-    "resolvedNodeVersion": "18.19.1",
+    "resolvedNodeVersion": "22.17.1",
     "responseTimeout": 30000,
     "retries": {
       "runMode": 0,
@@ -77,7 +77,7 @@
         "majorVersion": "138",
         "name": "chrome",
         "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-        "version": "138.0.7204.101"
+        "version": "138.0.7204.158"
       },
       {
         "channel": "stable",
@@ -86,7 +86,7 @@
         "majorVersion": "138",
         "name": "edge",
         "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
-        "version": "138.0.3351.83"
+        "version": "138.0.3351.95"
       },
       {
         "channel": "stable",
@@ -107,7 +107,7 @@
     "cypressInternalEnv": "production"
   },
   "cypressVersion": "14.5.1",
-  "endedTestsAt": "2025-07-15T03:58:02.902Z",
+  "endedTestsAt": "2025-07-22T04:09:09.910Z",
   "osName": "win32",
   "osVersion": "10.0.26100",
   "runs": [
@@ -117,37 +117,29 @@
       "reporterStats": {
         "suites": 1,
         "tests": 2,
-        "passes": 1,
+        "passes": 2,
         "pending": 0,
-        "failures": 1,
-        "start": "2025-07-15T03:57:46.390Z",
-        "end": "2025-07-15T03:57:55.008Z",
-        "duration": 8618
+        "failures": 0,
+        "start": "2025-07-22T04:08:53.642Z",
+        "end": "2025-07-22T04:09:01.009Z",
+        "duration": 7367
       },
-      "screenshots": [
-        {
-          "height": 720,
-          "name": null,
-          "path": "C:\\code\\ebac-cypress-patterns\\cypress\\screenshots\\appActions.cy.js\\Teste de checkout -- Deve criar um novo endereço e efetuar uma compra (failed).png",
-          "takenAt": "2025-07-15T03:57:52.664Z",
-          "width": 1280
-        }
-      ],
+      "screenshots": [],
       "spec": {
-        "absolute": "C:/code/ebac-cypress-patterns/cypress/e2e/appActions.cy.js",
+        "absolute": "C:/code/ebac-cypress-patterns/cypress/e2e/AppActions.cy.js",
         "fileExtension": ".js",
-        "fileName": "appActions",
-        "name": "appActions.cy.js",
-        "relative": "cypress\\e2e\\appActions.cy.js"
+        "fileName": "AppActions",
+        "name": "AppActions.cy.js",
+        "relative": "cypress\\e2e\\AppActions.cy.js"
       },
       "stats": {
-        "duration": 8621,
-        "endedAt": "2025-07-15T03:57:55.007Z",
-        "failures": 1,
-        "passes": 1,
+        "duration": 7373,
+        "endedAt": "2025-07-22T04:09:01.008Z",
+        "failures": 0,
+        "passes": 2,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2025-07-15T03:57:46.386Z",
+        "startedAt": "2025-07-22T04:08:53.635Z",
         "suites": 1,
         "tests": 2
       },
@@ -155,12 +147,12 @@
         {
           "attempts": [
             {
-              "state": "failed"
+              "state": "passed"
             }
           ],
-          "displayError": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=\"addNewAddress\"]`, but never found it.\n    at Context.eval (webpack://ebac-cypress-patterns/./cypress/support/commands.js:59:7)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:141524:43)",
-          "duration": 6410,
-          "state": "failed",
+          "displayError": null,
+          "duration": 4868,
+          "state": "passed",
           "title": [
             "Teste de checkout",
             "Deve criar um novo endereço e efetuar uma compra"
@@ -173,7 +165,7 @@
             }
           ],
           "displayError": null,
-          "duration": 2173,
+          "duration": 2495,
           "state": "passed",
           "title": [
             "Teste de checkout",
@@ -192,9 +184,9 @@
         "passes": 1,
         "pending": 0,
         "failures": 0,
-        "start": "2025-07-15T03:57:55.955Z",
-        "end": "2025-07-15T03:57:59.356Z",
-        "duration": 3401
+        "start": "2025-07-22T04:09:02.009Z",
+        "end": "2025-07-22T04:09:05.794Z",
+        "duration": 3785
       },
       "screenshots": [],
       "spec": {
@@ -205,13 +197,13 @@
         "relative": "cypress\\e2e\\intercept.cy.js"
       },
       "stats": {
-        "duration": 3404,
-        "endedAt": "2025-07-15T03:57:59.355Z",
+        "duration": 3788,
+        "endedAt": "2025-07-22T04:09:05.794Z",
         "failures": 0,
         "passes": 1,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2025-07-15T03:57:55.951Z",
+        "startedAt": "2025-07-22T04:09:02.006Z",
         "suites": 1,
         "tests": 1
       },
@@ -223,7 +215,7 @@
             }
           ],
           "displayError": null,
-          "duration": 3399,
+          "duration": 3783,
           "state": "passed",
           "title": [
             "Teste de checkout",
@@ -242,9 +234,9 @@
         "passes": 1,
         "pending": 0,
         "failures": 0,
-        "start": "2025-07-15T03:58:00.395Z",
-        "end": "2025-07-15T03:58:02.903Z",
-        "duration": 2508
+        "start": "2025-07-22T04:09:07.047Z",
+        "end": "2025-07-22T04:09:09.910Z",
+        "duration": 2863
       },
       "screenshots": [],
       "spec": {
@@ -255,13 +247,13 @@
         "relative": "cypress\\e2e\\pageObjects.cy.js"
       },
       "stats": {
-        "duration": 2511,
-        "endedAt": "2025-07-15T03:58:02.902Z",
+        "duration": 2867,
+        "endedAt": "2025-07-22T04:09:09.910Z",
         "failures": 0,
         "passes": 1,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2025-07-15T03:58:00.391Z",
+        "startedAt": "2025-07-22T04:09:07.043Z",
         "suites": 1,
         "tests": 1
       },
@@ -273,7 +265,7 @@
             }
           ],
           "displayError": null,
-          "duration": 2505,
+          "duration": 2862,
           "state": "passed",
           "title": [
             "Teste de autenticação",
@@ -284,10 +276,10 @@
       "video": null
     }
   ],
-  "startedTestsAt": "2025-07-15T03:57:46.386Z",
-  "totalDuration": 14536,
-  "totalFailed": 1,
-  "totalPassed": 3,
+  "startedTestsAt": "2025-07-22T04:08:53.635Z",
+  "totalDuration": 14028,
+  "totalFailed": 0,
+  "totalPassed": 4,
   "totalPending": 0,
   "totalSkipped": 0,
   "totalSuites": 3,
