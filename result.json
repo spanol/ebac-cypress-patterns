@@ -1,0 +1,243 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2025-07-15T03:01:13.722Z",
+    "end": "2025-07-15T03:01:46.327Z",
+    "duration": 32605
+  },
+  "results": [
+    {
+      "uuid": "e2e60be6-04a5-43cb-b6fe-bda92769ef96",
+      "title": "",
+      "fullFile": "cypress\\e2e\\appActions.cy.js",
+      "file": "cypress\\e2e\\appActions.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "544f7b45-a813-424a-8252-7a63966efd8e",
+          "title": "Teste de checkout",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve criar um novo endereço e efetuar uma compra",
+              "fullTitle": "Teste de checkout Deve criar um novo endereço e efetuar uma compra",
+              "timedOut": null,
+              "duration": 6478,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.command(\"login\", user.email, user.password);\ncy.command(\"openCart\");\ncy.command(\"addAddress\", address.name, address.phone, address.address, address.city, address.state, address.zipCode);\ncy.command(\"addRandomProductToCart\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=\"addNewAddress\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=\"addNewAddress\"]`, but never found it.\n    at Context.eval (webpack://ebac-cypress-patterns/./cypress/support/commands.js:59:7)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:141524:43)",
+                "diff": null
+              },
+              "uuid": "d8cfc27b-c6f7-4f5e-ad82-7a81aae18cb3",
+              "parentUUID": "544f7b45-a813-424a-8252-7a63966efd8e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve efetuar uma compra com um endereço existente",
+              "fullTitle": "Teste de checkout Deve efetuar uma compra com um endereço existente",
+              "timedOut": null,
+              "duration": 2279,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.command(\"login\", user.email, user.password);\ncy.command(\"openCart\");\ncy.command(\"addRandomProductToCart\");",
+              "err": {},
+              "uuid": "f50acd78-b5a6-4362-bb9a-f13657f2a0c3",
+              "parentUUID": "544f7b45-a813-424a-8252-7a63966efd8e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f50acd78-b5a6-4362-bb9a-f13657f2a0c3"
+          ],
+          "failures": [
+            "d8cfc27b-c6f7-4f5e-ad82-7a81aae18cb3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8757,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "87331d5e-3ef9-4d31-b64f-6367e990cd04",
+      "title": "",
+      "fullFile": "cypress\\e2e\\intercept.cy.js",
+      "file": "cypress\\e2e\\intercept.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7004efc9-7048-4db3-8e8b-92b6b97e2853",
+          "title": "Teste de checkout",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve percorrer o fluxo de pesquisa e seleção e checkout de produtos",
+              "fullTitle": "Teste de checkout Deve percorrer o fluxo de pesquisa e seleção e checkout de produtos",
+              "timedOut": null,
+              "duration": 11234,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept(\"GET\", \"**/public/getCategories\", {\n  fixture: \"categories.json\"\n}).as(\"getCategories\");\ncy.intercept(\"GET\", \"/public/getProducts**\", {\n  fixture: \"products.json\"\n}).as(\"getProducts\");\nhomePage.openSearchProduct();\nhomePage.openCategoriesFilter();\nhomePage.categories().should(\"have.length.greaterThan\", 1);\nhomePage.selectCategory();\ncy.addFirstProductToCart();\ncy.finishCheckout();",
+              "err": {},
+              "uuid": "ee4d951b-693e-48d0-9f99-0f096ec44248",
+              "parentUUID": "7004efc9-7048-4db3-8e8b-92b6b97e2853",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ee4d951b-693e-48d0-9f99-0f096ec44248"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11234,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e78cfb0f-7ba6-4e46-a24e-0b7cfabb3d1c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\pageObjects.cy.js",
+      "file": "cypress\\e2e\\pageObjects.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "13d5b038-ab27-438e-bcae-235dff1b7afe",
+          "title": "Teste de autenticação",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve autenticar o usuário",
+              "fullTitle": "Teste de autenticação Deve autenticar o usuário",
+              "timedOut": null,
+              "duration": 10435,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.openMenu(\"Account\");\n_login.default.login(user.email, user.password);\nhomePage.openMenu(\"Account\");\nprofilePage.customerName().should(\"contain\", user.name);\nprofilePage.customerPhone().should(\"contain\", user.phone);\nprofilePage.customerEmail().should(\"contain\", user.email);",
+              "err": {},
+              "uuid": "f1f0eab2-1a30-453f-851d-e38571e916c6",
+              "parentUUID": "13d5b038-ab27-438e-bcae-235dff1b7afe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f1f0eab2-1a30-453f-851d-e38571e916c6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10435,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportFilename": "[name]-report",
+        "html": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

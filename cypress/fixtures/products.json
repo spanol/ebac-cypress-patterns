@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "products": [
+    {
+      "_id": "67c8d8423b26abde96f5ee04",
+      "categories": [],
+      "photos": ["https://exemplo.com/camiseta.jpg"],
+      "visible": true,
+      "additionalDetails": [],
+      "name": "Camiseta EBAC",
+      "price": 149.99,
+      "quantity": 35,
+      "description": "Camiseta 100% algodão",
+      "popular": true,
+      "specialPrice": 149.99,
+      "createdAt": "2025-03-05T23:03:30.546Z",
+      "updatedAt": "2025-07-10T06:27:30.763Z",
+      "__v": 0
+    }
+  ],
+  "totalProduct": 1
+}

@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "categories": [
+    {
+      "_id": "6870382a817a38090e0dc1de",
+      "name": "Eletrônicos",
+      "photo": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+      "createdAt": "2025-07-10T22:01:14.050Z",
+      "updatedAt": "2025-07-10T22:01:14.050Z",
+      "__v": 0
+    },
+    {
+      "_id": "68703642817a38090e0dc1b2",
+      "name": "Roupas",
+      "photo": "https://images.unsplash.com/photo-1521334884684-d80222895322",
+      "createdAt": "2025-07-10T21:53:06.740Z",
+      "updatedAt": "2025-07-10T21:53:06.740Z",
+      "__v": 0
+    },
+    {
+      "_id": "68703485817a38090e0dc186",
+      "name": "Livros",
+      "photo": "https://images.unsplash.com/photo-1512820790803-83ca734da794",
+      "createdAt": "2025-07-10T21:45:41.034Z",
+      "updatedAt": "2025-07-10T21:45:41.034Z",
+      "__v": 0
+    },
+    {
+      "_id": "687033fd817a38090e0dc15a",
+      "name": "Brinquedos",
+      "photo": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+      "createdAt": "2025-07-10T21:43:25.750Z",
+      "updatedAt": "2025-07-10T21:43:25.750Z",
+      "__v": 0
+    }
+  ],
+  "totalCategory": 4
+}

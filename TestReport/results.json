@@ -1,0 +1,295 @@
+{
+  "browserName": "electron",
+  "browserPath": "",
+  "browserVersion": "130.0.6723.137",
+  "config": {
+    "baseUrl": "http://lojaebac.ebaconline.art.br/",
+    "projectRoot": "C:\\code\\ebac-cypress-patterns",
+    "projectName": "ebac-cypress-patterns",
+    "configFile": "cypress.config.js",
+    "isTextTerminal": true,
+    "animationDistanceThreshold": 5,
+    "arch": "x64",
+    "blockHosts": null,
+    "chromeWebSecurity": true,
+    "clientCertificates": [],
+    "defaultBrowser": null,
+    "defaultCommandTimeout": 4000,
+    "downloadsFolder": "C:\\code\\ebac-cypress-patterns\\cypress\\downloads",
+    "env": {},
+    "execTimeout": 60000,
+    "experimentalCspAllowList": false,
+    "experimentalInteractiveRunEvents": false,
+    "experimentalRunAllSpecs": false,
+    "experimentalMemoryManagement": false,
+    "experimentalModifyObstructiveThirdPartyCode": false,
+    "injectDocumentDomain": false,
+    "experimentalOriginDependencies": false,
+    "experimentalSourceRewriting": false,
+    "experimentalSingleTabRunMode": false,
+    "experimentalStudio": false,
+    "experimentalWebKitSupport": false,
+    "fileServerFolder": "C:\\code\\ebac-cypress-patterns",
+    "fixturesFolder": "C:\\code\\ebac-cypress-patterns\\cypress\\fixtures",
+    "excludeSpecPattern": "*.hot-update.js",
+    "includeShadowDom": false,
+    "justInTimeCompile": true,
+    "keystrokeDelay": 0,
+    "modifyObstructiveCode": true,
+    "numTestsKeptInMemory": 0,
+    "platform": "win32",
+    "pageLoadTimeout": 60000,
+    "port": 59299,
+    "projectId": null,
+    "redirectionLimit": 20,
+    "reporter": "spec",
+    "reporterOptions": null,
+    "requestTimeout": 5000,
+    "resolvedNodePath": "C:\\nvm4w\\nodejs\\node.exe",
+    "resolvedNodeVersion": "18.19.1",
+    "responseTimeout": 30000,
+    "retries": {
+      "runMode": 0,
+      "openMode": 0
+    },
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "C:\\code\\ebac-cypress-patterns\\cypress\\screenshots",
+    "slowTestThreshold": 10000,
+    "scrollBehavior": "top",
+    "supportFile": "C:\\code\\ebac-cypress-patterns\\cypress\\support\\e2e.js",
+    "taskTimeout": 60000,
+    "testIsolation": true,
+    "trashAssetsBeforeRuns": true,
+    "userAgent": null,
+    "video": false,
+    "videoCompression": false,
+    "videosFolder": "C:\\code\\ebac-cypress-patterns\\cypress\\videos",
+    "viewportHeight": 660,
+    "viewportWidth": 1000,
+    "waitForAnimations": true,
+    "watchForFileChanges": false,
+    "specPattern": "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+    "browsers": [
+      {
+        "channel": "stable",
+        "displayName": "Chrome",
+        "family": "chromium",
+        "majorVersion": "138",
+        "name": "chrome",
+        "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "version": "138.0.7204.101"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Edge",
+        "family": "chromium",
+        "majorVersion": "138",
+        "name": "edge",
+        "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "version": "138.0.3351.83"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Electron",
+        "family": "chromium",
+        "majorVersion": 130,
+        "name": "electron",
+        "path": "",
+        "version": "130.0.6723.137"
+      }
+    ],
+    "cypressBinaryRoot": "C:\\Users\\cspan\\AppData\\Local\\Cypress\\Cache\\14.5.1\\Cypress\\resources\\app",
+    "hosts": null,
+    "isInteractive": true,
+    "version": "14.5.1",
+    "testingType": "e2e",
+    "browser": null,
+    "cypressInternalEnv": "production"
+  },
+  "cypressVersion": "14.5.1",
+  "endedTestsAt": "2025-07-15T03:58:02.902Z",
+  "osName": "win32",
+  "osVersion": "10.0.26100",
+  "runs": [
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 1,
+        "pending": 0,
+        "failures": 1,
+        "start": "2025-07-15T03:57:46.390Z",
+        "end": "2025-07-15T03:57:55.008Z",
+        "duration": 8618
+      },
+      "screenshots": [
+        {
+          "height": 720,
+          "name": null,
+          "path": "C:\\code\\ebac-cypress-patterns\\cypress\\screenshots\\appActions.cy.js\\Teste de checkout -- Deve criar um novo endereço e efetuar uma compra (failed).png",
+          "takenAt": "2025-07-15T03:57:52.664Z",
+          "width": 1280
+        }
+      ],
+      "spec": {
+        "absolute": "C:/code/ebac-cypress-patterns/cypress/e2e/appActions.cy.js",
+        "fileExtension": ".js",
+        "fileName": "appActions",
+        "name": "appActions.cy.js",
+        "relative": "cypress\\e2e\\appActions.cy.js"
+      },
+      "stats": {
+        "duration": 8621,
+        "endedAt": "2025-07-15T03:57:55.007Z",
+        "failures": 1,
+        "passes": 1,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2025-07-15T03:57:46.386Z",
+        "suites": 1,
+        "tests": 2
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=\"addNewAddress\"]`, but never found it.\n    at Context.eval (webpack://ebac-cypress-patterns/./cypress/support/commands.js:59:7)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:141524:43)",
+          "duration": 6410,
+          "state": "failed",
+          "title": [
+            "Teste de checkout",
+            "Deve criar um novo endereço e efetuar uma compra"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 2173,
+          "state": "passed",
+          "title": [
+            "Teste de checkout",
+            "Deve efetuar uma compra com um endereço existente"
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2025-07-15T03:57:55.955Z",
+        "end": "2025-07-15T03:57:59.356Z",
+        "duration": 3401
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/code/ebac-cypress-patterns/cypress/e2e/intercept.cy.js",
+        "fileExtension": ".js",
+        "fileName": "intercept",
+        "name": "intercept.cy.js",
+        "relative": "cypress\\e2e\\intercept.cy.js"
+      },
+      "stats": {
+        "duration": 3404,
+        "endedAt": "2025-07-15T03:57:59.355Z",
+        "failures": 0,
+        "passes": 1,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2025-07-15T03:57:55.951Z",
+        "suites": 1,
+        "tests": 1
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 3399,
+          "state": "passed",
+          "title": [
+            "Teste de checkout",
+            "Deve percorrer o fluxo de pesquisa e seleção e checkout de produtos"
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2025-07-15T03:58:00.395Z",
+        "end": "2025-07-15T03:58:02.903Z",
+        "duration": 2508
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/code/ebac-cypress-patterns/cypress/e2e/pageObjects.cy.js",
+        "fileExtension": ".js",
+        "fileName": "pageObjects",
+        "name": "pageObjects.cy.js",
+        "relative": "cypress\\e2e\\pageObjects.cy.js"
+      },
+      "stats": {
+        "duration": 2511,
+        "endedAt": "2025-07-15T03:58:02.902Z",
+        "failures": 0,
+        "passes": 1,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2025-07-15T03:58:00.391Z",
+        "suites": 1,
+        "tests": 1
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 2505,
+          "state": "passed",
+          "title": [
+            "Teste de autenticação",
+            "Deve autenticar o usuário"
+          ]
+        }
+      ],
+      "video": null
+    }
+  ],
+  "startedTestsAt": "2025-07-15T03:57:46.386Z",
+  "totalDuration": 14536,
+  "totalFailed": 1,
+  "totalPassed": 3,
+  "totalPending": 0,
+  "totalSkipped": 0,
+  "totalSuites": 3,
+  "totalTests": 4
+}
