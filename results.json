@@ -1,7 +1,7 @@
 {
   "browserName": "chrome",
   "browserPath": "google-chrome",
-  "browserVersion": "138.0.7204.100",
+  "browserVersion": "138.0.7204.157",
   "config": {
     "baseUrl": "http://lojaebac.ebaconline.art.br/",
     "projectRoot": "/home/runner/work/ebac-cypress-patterns/ebac-cypress-patterns",
@@ -41,7 +41,7 @@
     "numTestsKeptInMemory": 0,
     "platform": "linux",
     "pageLoadTimeout": 60000,
-    "port": 39853,
+    "port": 41167,
     "projectId": null,
     "redirectionLimit": 20,
     "reporter": "spec",
@@ -79,7 +79,7 @@
         "majorVersion": "138",
         "name": "chrome",
         "path": "google-chrome",
-        "version": "138.0.7204.100"
+        "version": "138.0.7204.157"
       },
       {
         "channel": "stable",
@@ -106,7 +106,7 @@
         "majorVersion": "138",
         "name": "edge",
         "path": "microsoft-edge",
-        "version": "138.0.3351.77"
+        "version": "138.0.3351.95"
       },
       {
         "channel": "stable",
@@ -127,7 +127,7 @@
     "cypressInternalEnv": "production"
   },
   "cypressVersion": "14.5.2",
-  "endedTestsAt": "2025-07-22T19:52:23.733Z",
+  "endedTestsAt": "2025-07-23T20:12:48.758Z",
   "osName": "linux",
   "osVersion": "Ubuntu - ",
   "runs": [
@@ -140,23 +140,23 @@
         "passes": 0,
         "pending": 0,
         "failures": 2,
-        "start": "2025-07-22T19:51:44.029Z",
-        "end": "2025-07-22T19:52:04.631Z",
-        "duration": 20602
+        "start": "2025-07-23T20:12:02.214Z",
+        "end": "2025-07-23T20:12:24.602Z",
+        "duration": 22388
       },
       "screenshots": [
         {
           "height": 633,
           "name": null,
           "path": "/home/runner/work/ebac-cypress-patterns/ebac-cypress-patterns/cypress/screenshots/AppActions.cy.js/Teste de checkout -- Deve criar um novo endereço e efetuar uma compra (failed).png",
-          "takenAt": "2025-07-22T19:51:57.452Z",
+          "takenAt": "2025-07-23T20:12:17.220Z",
           "width": 1280
         },
         {
           "height": 633,
           "name": null,
           "path": "/home/runner/work/ebac-cypress-patterns/ebac-cypress-patterns/cypress/screenshots/AppActions.cy.js/Teste de checkout -- Deve efetuar uma compra com um endereço existente (failed).png",
-          "takenAt": "2025-07-22T19:52:04.511Z",
+          "takenAt": "2025-07-23T20:12:24.471Z",
           "width": 1280
         }
       ],
@@ -168,13 +168,13 @@
         "relative": "cypress/e2e/AppActions.cy.js"
       },
       "stats": {
-        "duration": 20606,
-        "endedAt": "2025-07-22T19:52:04.630Z",
+        "duration": 22392,
+        "endedAt": "2025-07-23T20:12:24.601Z",
         "failures": 2,
         "passes": 0,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2025-07-22T19:51:44.024Z",
+        "startedAt": "2025-07-23T20:12:02.209Z",
         "suites": 1,
         "tests": 2
       },
@@ -186,7 +186,7 @@
             }
           ],
           "displayError": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=\"addNewAddress\"]`, but never found it.\n    at Context.eval (webpack://ebac-cypress-patterns/./cypress/support/actions/addAddress.js:4:7)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:141524:43)",
-          "duration": 13565,
+          "duration": 15205,
           "state": "failed",
           "title": [
             "Teste de checkout",
@@ -200,7 +200,7 @@
             }
           ],
           "displayError": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[style=\"z-index: 0; display: flex;\"] > [style=\"background-color: rgb(242, 242, 242);\"] > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > [style=\"background-color: rgb(242, 242, 242); display: flex;\"] > :nth-child(1) > :nth-child(1) > .r-13awgt0 > :nth-child(3) > [data-testid=\"selectAddressOrContinueToPayment\"]`, but never found it.\n    at Context.eval (webpack://ebac-cypress-patterns/./cypress/support/actions/cart.js:15:5)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:141524:43)",
-          "duration": 6976,
+          "duration": 7123,
           "state": "failed",
           "title": [
             "Teste de checkout",
@@ -219,16 +219,16 @@
         "passes": 0,
         "pending": 0,
         "failures": 1,
-        "start": "2025-07-22T19:52:05.902Z",
-        "end": "2025-07-22T19:52:14.793Z",
-        "duration": 8891
+        "start": "2025-07-23T20:12:25.963Z",
+        "end": "2025-07-23T20:12:39.182Z",
+        "duration": 13219
       },
       "screenshots": [
         {
           "height": 633,
           "name": null,
           "path": "/home/runner/work/ebac-cypress-patterns/ebac-cypress-patterns/cypress/screenshots/intercept.cy.js/Teste de checkout -- Deve percorrer o fluxo de pesquisa e seleção e checkout de produtos (failed).png",
-          "takenAt": "2025-07-22T19:52:14.654Z",
+          "takenAt": "2025-07-23T20:12:39.069Z",
           "width": 1280
         }
       ],
@@ -240,13 +240,13 @@
         "relative": "cypress/e2e/intercept.cy.js"
       },
       "stats": {
-        "duration": 8894,
-        "endedAt": "2025-07-22T19:52:14.792Z",
+        "duration": 13226,
+        "endedAt": "2025-07-23T20:12:39.180Z",
         "failures": 1,
         "passes": 0,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2025-07-22T19:52:05.898Z",
+        "startedAt": "2025-07-23T20:12:25.954Z",
         "suites": 1,
         "tests": 1
       },
@@ -258,7 +258,7 @@
             }
           ],
           "displayError": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=\"selectAddressOrContinueToPayment\"]`, but never found it.\n    at Context.eval (webpack://ebac-cypress-patterns/./cypress/support/actions/cart.js:31:5)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:141524:43)",
-          "duration": 8864,
+          "duration": 13195,
           "state": "failed",
           "title": [
             "Teste de checkout",
@@ -277,9 +277,9 @@
         "passes": 1,
         "pending": 0,
         "failures": 0,
-        "start": "2025-07-22T19:52:16.009Z",
-        "end": "2025-07-22T19:52:23.735Z",
-        "duration": 7726
+        "start": "2025-07-23T20:12:40.444Z",
+        "end": "2025-07-23T20:12:48.759Z",
+        "duration": 8315
       },
       "screenshots": [],
       "spec": {
@@ -290,13 +290,13 @@
         "relative": "cypress/e2e/pageObjects.cy.js"
       },
       "stats": {
-        "duration": 7728,
-        "endedAt": "2025-07-22T19:52:23.733Z",
+        "duration": 8318,
+        "endedAt": "2025-07-23T20:12:48.758Z",
         "failures": 0,
         "passes": 1,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2025-07-22T19:52:16.005Z",
+        "startedAt": "2025-07-23T20:12:40.440Z",
         "suites": 1,
         "tests": 1
       },
@@ -308,7 +308,7 @@
             }
           ],
           "displayError": null,
-          "duration": 7723,
+          "duration": 8312,
           "state": "passed",
           "title": [
             "Teste de autenticação",
@@ -319,8 +319,8 @@
       "video": null
     }
   ],
-  "startedTestsAt": "2025-07-22T19:51:44.024Z",
-  "totalDuration": 37228,
+  "startedTestsAt": "2025-07-23T20:12:02.209Z",
+  "totalDuration": 43936,
   "totalFailed": 3,
   "totalPassed": 1,
   "totalPending": 0,
