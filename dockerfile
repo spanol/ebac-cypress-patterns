@@ -1,5 +1,5 @@
 
-FROM cypress/included:10.0.0
+FROM node:18
 
 WORKDIR /e2e
 
