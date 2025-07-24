@@ -41,7 +41,7 @@
     "numTestsKeptInMemory": 0,
     "platform": "linux",
     "pageLoadTimeout": 60000,
-    "port": 43947,
+    "port": 46131,
     "projectId": null,
     "redirectionLimit": 20,
     "reporter": "spec",
@@ -127,7 +127,7 @@
     "cypressInternalEnv": "production"
   },
   "cypressVersion": "14.5.2",
-  "endedTestsAt": "2025-07-24T23:22:10.734Z",
+  "endedTestsAt": "2025-07-24T23:24:32.989Z",
   "osName": "linux",
   "osVersion": "Ubuntu - ",
   "runs": [
@@ -136,20 +136,20 @@
       "reporter": "spec",
       "reporterStats": {
         "suites": 1,
-        "tests": 2,
-        "passes": 1,
+        "tests": 1,
+        "passes": 0,
         "pending": 0,
         "failures": 1,
-        "start": "2025-07-24T23:21:32.128Z",
-        "end": "2025-07-24T23:21:49.340Z",
-        "duration": 17212
+        "start": "2025-07-24T23:22:21.968Z",
+        "end": "2025-07-24T23:23:22.272Z",
+        "duration": 60304
       },
       "screenshots": [
         {
           "height": 633,
           "name": null,
-          "path": "/home/runner/work/ebac-cypress-patterns/ebac-cypress-patterns/cypress/screenshots/AppActions.cy.js/Teste de checkout -- Deve criar um novo endereço e efetuar uma compra (failed).png",
-          "takenAt": "2025-07-24T23:21:45.623Z",
+          "path": "/home/runner/work/ebac-cypress-patterns/ebac-cypress-patterns/cypress/screenshots/AppActions.cy.js/Teste de checkout -- Deve criar um novo endereço e efetuar uma compra -- before each hook (failed).png",
+          "takenAt": "2025-07-24T23:23:22.011Z",
           "width": 1280
         }
       ],
@@ -161,13 +161,13 @@
         "relative": "cypress/e2e/AppActions.cy.js"
       },
       "stats": {
-        "duration": 17216,
-        "endedAt": "2025-07-24T23:21:49.339Z",
+        "duration": 60308,
+        "endedAt": "2025-07-24T23:23:22.271Z",
         "failures": 1,
-        "passes": 1,
+        "passes": 0,
         "pending": 0,
-        "skipped": 0,
-        "startedAt": "2025-07-24T23:21:32.123Z",
+        "skipped": 1,
+        "startedAt": "2025-07-24T23:22:21.963Z",
         "suites": 1,
         "tests": 2
       },
@@ -178,8 +178,8 @@
               "state": "failed"
             }
           ],
-          "displayError": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=\"addNewAddress\"]`, but never found it.\n    at Context.eval (webpack://ebac-cypress-patterns/./cypress/support/actions/addAddress.js:4:7)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:141524:43)",
-          "duration": 13641,
+          "displayError": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Teste de checkout`\n    at timedOutWaitingForPageLoad (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://ebac-cypress-patterns/./cypress/e2e/AppActions.cy.js:9:7)",
+          "duration": 60246,
           "state": "failed",
           "title": [
             "Teste de checkout",
@@ -189,12 +189,12 @@
         {
           "attempts": [
             {
-              "state": "passed"
+              "state": "skipped"
             }
           ],
           "displayError": null,
-          "duration": 3527,
-          "state": "passed",
+          "duration": 0,
+          "state": "skipped",
           "title": [
             "Teste de checkout",
             "Deve efetuar uma compra com um endereço existente"
@@ -212,16 +212,16 @@
         "passes": 0,
         "pending": 0,
         "failures": 1,
-        "start": "2025-07-24T23:21:50.631Z",
-        "end": "2025-07-24T23:22:02.605Z",
-        "duration": 11974
+        "start": "2025-07-24T23:23:23.542Z",
+        "end": "2025-07-24T23:24:23.740Z",
+        "duration": 60198
       },
       "screenshots": [
         {
           "height": 633,
           "name": null,
-          "path": "/home/runner/work/ebac-cypress-patterns/ebac-cypress-patterns/cypress/screenshots/intercept.cy.js/Teste de checkout -- Deve percorrer o fluxo de pesquisa e seleção e checkout de produtos (failed).png",
-          "takenAt": "2025-07-24T23:22:02.462Z",
+          "path": "/home/runner/work/ebac-cypress-patterns/ebac-cypress-patterns/cypress/screenshots/intercept.cy.js/Teste de checkout -- Deve percorrer o fluxo de pesquisa e seleção e checkout de produtos -- before all hook (failed).png",
+          "takenAt": "2025-07-24T23:24:23.586Z",
           "width": 1280
         }
       ],
@@ -233,13 +233,13 @@
         "relative": "cypress/e2e/intercept.cy.js"
       },
       "stats": {
-        "duration": 11977,
-        "endedAt": "2025-07-24T23:22:02.604Z",
+        "duration": 60200,
+        "endedAt": "2025-07-24T23:24:23.738Z",
         "failures": 1,
         "passes": 0,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2025-07-24T23:21:50.627Z",
+        "startedAt": "2025-07-24T23:23:23.538Z",
         "suites": 1,
         "tests": 1
       },
@@ -250,8 +250,8 @@
               "state": "failed"
             }
           ],
-          "displayError": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=\"selectAddressOrContinueToPayment\"]`, but never found it.\n    at Context.eval (webpack://ebac-cypress-patterns/./cypress/support/actions/cart.js:31:5)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:141524:43)",
-          "duration": 11946,
+          "displayError": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Teste de checkout`\n    at timedOutWaitingForPageLoad (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://ebac-cypress-patterns/./cypress/e2e/intercept.cy.js:9:7)",
+          "duration": 60171,
           "state": "failed",
           "title": [
             "Teste de checkout",
@@ -270,9 +270,9 @@
         "passes": 1,
         "pending": 0,
         "failures": 0,
-        "start": "2025-07-24T23:22:03.934Z",
-        "end": "2025-07-24T23:22:10.736Z",
-        "duration": 6802
+        "start": "2025-07-24T23:24:25.055Z",
+        "end": "2025-07-24T23:24:32.991Z",
+        "duration": 7936
       },
       "screenshots": [],
       "spec": {
@@ -283,13 +283,13 @@
         "relative": "cypress/e2e/pageObjects.cy.js"
       },
       "stats": {
-        "duration": 6804,
-        "endedAt": "2025-07-24T23:22:10.734Z",
+        "duration": 7938,
+        "endedAt": "2025-07-24T23:24:32.989Z",
         "failures": 0,
         "passes": 1,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2025-07-24T23:22:03.930Z",
+        "startedAt": "2025-07-24T23:24:25.051Z",
         "suites": 1,
         "tests": 1
       },
@@ -301,7 +301,7 @@
             }
           ],
           "displayError": null,
-          "duration": 6799,
+          "duration": 7933,
           "state": "passed",
           "title": [
             "Teste de autenticação",
@@ -312,12 +312,12 @@
       "video": null
     }
   ],
-  "startedTestsAt": "2025-07-24T23:21:32.123Z",
-  "totalDuration": 35997,
+  "startedTestsAt": "2025-07-24T23:22:21.963Z",
+  "totalDuration": 128446,
   "totalFailed": 2,
-  "totalPassed": 2,
+  "totalPassed": 1,
   "totalPending": 0,
-  "totalSkipped": 0,
+  "totalSkipped": 1,
   "totalSuites": 3,
   "totalTests": 4
 }

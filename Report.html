@@ -34,8 +34,8 @@
   </nav>
   <div class="container mt-3">
     <div class="navbar-text" style="font-size: medium; color: #888;">
-      Browser: chrome - 138.0.7204.157  |  Cypress Ver: 14.5.2  |
-      Platform OS: linux  |  Passed: 2  | Failed: 2 |  Skipped: 0 |
+      Browser: electron - 130.0.6723.137  |  Cypress Ver: 14.5.1  |
+      Platform OS: win32  |  Passed: 4  | Failed: 0 |  Skipped: 0 |
       Total Tests: 4
     </div>
   </div>
@@ -54,23 +54,23 @@
     <tbody>
       <tr>
         <th class="shaded-label">Passing %</th>
-        <td>50%</td>
+        <td>100%</td>
       </tr>
       <tr>
         <th class="shaded-label">Failing %</th>
-        <td>50%</td>
+        <td>0%</td>
       </tr>
       <tr>
         <th class="shaded-label">Start Time</th>
-        <td>Jul 24, 2025, 11:21 PM UTC </td>
+        <td>Jul 22, 2025, 01:08 AM GMT-3 </td>
       </tr>
       <tr>
         <th class="shaded-label">End Time</th>
-        <td>Jul 24, 2025, 11:22 PM UTC</td>
+        <td>Jul 22, 2025, 01:09 AM GMT-3</td>
       </tr>
       <tr>
         <th class="shaded-label">Execution time</th>
-        <td>0 min 35 sec</td>
+        <td>0 min 14 sec</td>
       </tr>
     </tbody>
   </table>
@@ -93,22 +93,20 @@
             
         <tr >
           <td style="width: 45%; text-align: left;">[Teste de checkout] Deve criar um novo endereço e efetuar uma compra</td>
-          <td style="width: 45%; text-align: center;" class="failed">AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid="addNewAddress"]`, but never found it.
-    at Context.eval (webpack://ebac-cypress-patterns/./cypress/support/actions/addAddress.js:4:7)</td>
-          <td style="width: 5%; text-align: center;"> <a href="http://127.0.0.1:8080/cypress/screenshots/AppActions.cy.js/Teste de checkout -- Deve criar um novo endereço e efetuar uma compra (failed).png" target="_blank">Screenshot</a></td>
-          <td style="width: 5%;">00 min 14 sec</td>
-        </tr>
-      
-        <tr >
-          <td style="width: 45%; text-align: left;">[Teste de checkout] Deve percorrer o fluxo de pesquisa e seleção e checkout de produtos</td>
-          <td style="width: 45%; text-align: center;" class="failed">AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid="selectAddressOrContinueToPayment"]`, but never found it.
-    at Context.eval (webpack://ebac-cypress-patterns/./cypress/support/actions/cart.js:31:5)</td>
-          <td style="width: 5%; text-align: center;"> <a href="http://127.0.0.1:8080/cypress/screenshots/intercept.cy.js/Teste de checkout -- Deve percorrer o fluxo de pesquisa e seleção e checkout de produtos (failed).png" target="_blank">Screenshot</a></td>
-          <td style="width: 5%;">00 min 12 sec</td>
+          <td style="width: 45%; text-align: center;" class="passed">Pass</td>
+          <td style="width: 5%; text-align: center;"></td>
+          <td style="width: 5%;">00 min 05 sec</td>
         </tr>
       
         <tr >
           <td style="width: 45%; text-align: left;">[Teste de checkout] Deve efetuar uma compra com um endereço existente</td>
+          <td style="width: 45%; text-align: center;" class="passed">Pass</td>
+          <td style="width: 5%; text-align: center;"></td>
+          <td style="width: 5%;">00 min 03 sec</td>
+        </tr>
+      
+        <tr >
+          <td style="width: 45%; text-align: left;">[Teste de checkout] Deve percorrer o fluxo de pesquisa e seleção e checkout de produtos</td>
           <td style="width: 45%; text-align: center;" class="passed">Pass</td>
           <td style="width: 5%; text-align: center;"></td>
           <td style="width: 5%;">00 min 04 sec</td>
@@ -118,7 +116,7 @@
           <td style="width: 45%; text-align: left;">[Teste de autenticação] Deve autenticar o usuário</td>
           <td style="width: 45%; text-align: center;" class="passed">Pass</td>
           <td style="width: 5%; text-align: center;"></td>
-          <td style="width: 5%;">00 min 07 sec</td>
+          <td style="width: 5%;">00 min 03 sec</td>
         </tr>
       
           </tbody>
@@ -128,7 +126,7 @@
       <script>
         document.addEventListener('DOMContentLoaded', function () {
           // Call a function to draw the pie chart
-          drawPieChart(2, 2, 0);
+          drawPieChart(4, 0, 0);
         });
 
         function drawPieChart(pass, fail, skipped) {
